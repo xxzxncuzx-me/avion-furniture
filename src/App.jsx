@@ -22,7 +22,7 @@ export default () => {
     <CartProvider>
       <Navbar />
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/avion-furniture' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/allproducts' element={<AllProducts />} />
           <Route path="/product/:id" element={<ProductDetail />} /> 

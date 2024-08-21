@@ -57,7 +57,7 @@ export default () => {
   return (
     <div>
       <nav className="navbar">
-        <Link to='/' className='logo'>Avion</Link>
+        <Link to='/avion-furniture' className='logo'>Avion</Link>
         <div className="navigation">
           <div className="nav__menu" ref={sideNavRef}>
             <div className={menu}>
