@@ -1,0 +1,40 @@
+@import '../_variables.scss';
+
+.features__block {
+    h2 {
+        text-align: center;
+        margin-bottom: 36px;
+    } 
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media only screen and  (max-width: $screen-sm-max) {
+        flex-direction: column;
+    } 
+
+    @media only screen and (min-width: $screen-md-min){
+        flex-direction: row;
+    }
+
+    .features__block {
+        background-color: $gray-color;
+
+        @media only screen and (max-width: $screen-sm-max) {
+            padding: 36px 24px;
+        } 
+
+        @media only screen and (min-width: $screen-md-min) {
+            width: 305px;
+            padding: 48px;
+        }
+
+        p{
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+}

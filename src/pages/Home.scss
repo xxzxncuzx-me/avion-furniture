@@ -1,0 +1,160 @@
+@import '../_variables.scss';
+
+.home__page--main {
+    @media only screen and (max-width: $screen-sm-max){
+        height: 639px;
+        .xs__img {
+            width: 100vw;
+            height: 304px;
+            background-image: url(../../static/img/home-background.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    @media only screen and (min-width: $screen-md-min) {
+        padding-top: 130px;
+        background-image: url(../../static/img/home-background.jfif);
+        .xs__img {
+            display: none;
+        }
+    }
+    
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        padding-left: 25vw;
+    }
+
+    @media only screen and (min-width: $screen-lg-min) {
+        padding-left: 730px;
+    }
+
+    @media only screen and (min-width: $screen-md-min)  {
+        height: 704px;
+        background-size: cover;
+    }
+
+    .info__box {
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $screen-xs-max) {
+            padding: 47px 24px 24px 24px;
+            height: 335px;
+        }
+        @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            padding: 47px 24px 24px 24px;
+        } 
+
+        @media only screen and (min-width: $screen-md-min) {
+            padding: 46px 56px;
+            width: 630px;
+            height: 444px;
+        }
+
+        h2 {
+            color: $text-color2;
+        }
+        p{
+            color: $text-color1;
+        }
+        .button {
+            @media only screen and (min-width: $screen-sm-min) {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.home__page--content {
+    color: $deep-blue-color;
+
+    @media only screen and (max-width: $screen-sm-max) {
+        margin: 48px 24px;
+    } 
+
+    @media only screen and (min-width: $screen-md-min) {
+        margin: 80px;
+    }
+
+    h3{
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 36px 0;
+    }
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    .products {
+        @media only screen and (max-width: $screen-sm-max) {
+            margin-top: 74px;
+        } 
+
+        @media only screen and (min-width: $screen-md-min) {
+            margin-top: 110px;
+        }
+    }
+    .button {
+        @media only screen and (min-width: $screen-sm-min) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.home__page--content {
+    .about__brand {
+        gap: 16px;
+        @media only screen and (max-width: $screen-sm-max) {
+            margin: 60px 0 32px 0;
+        }
+
+        @media only screen and (min-width: $screen-md-min) {
+            margin: 100px 0 60px 0;
+        }
+
+        .about {
+            @media only screen and (max-width: $screen-xs-max) {
+                width: 85vw;
+                height: 259px;
+                padding: 20px;
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                width: 342px;
+                height: 259px;
+                padding: 36px 32px;
+                p {
+                    font-size: 14px;
+                }
+            } 
+
+            @media only screen and (min-width: $screen-md-min) {
+                width: 634px;
+                height: 478px;
+                padding: 64px;
+            }
+
+            &.text {
+                background-color: $deep-blue-color;
+                color: $white-color;
+                .button {
+                    background-color: $translucent-blue;
+                    border: 2px solid rgba(249,249,249, 0);
+                    color: $white-color;
+                }
+            }
+        &.img {
+                background-image: url(../../static/img/about-brand.jfif);
+            }  
+        }
+    }
+}

@@ -1,0 +1,207 @@
+@import '_variables.scss';
+
+* {
+  box-sizing: border-box;
+   font-family: 'ClashDisplay-Regular';
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+body {
+  margin: 0;
+
+  p {
+    font-size: 18px;
+    font-family: 'Satoshi-Regular';
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    font-family: 'Satoshi-Regular';
+    list-style-type: none;
+  }
+
+  a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Satoshi-Regular';
+  transition: 0.3s;
+  }
+
+  h2 {
+    margin: 0;
+    @media only screen and (max-width: $screen-xs-max) {
+        font-size: 24px;
+        line-height: 29.52px;
+    }
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 24px;
+        line-height: 29.52px;
+    } 
+
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        font-size: 32px;
+        line-height: 44.6px;
+    }
+
+    @media only screen and (min-width: $screen-lg-min) {
+        font-size: 32px;
+        line-height: 44.6px;
+    }
+  }
+
+  h4 {
+    margin: 12px 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  input {
+    border: none;
+    &:focus::placeholder {
+      color: transparent;
+    } 
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 16px;
+    text-align: center;
+    border-radius: 2px;
+    @media only screen and (min-width: $screen-sm-min) {
+        width: 170px;
+    }
+
+    &.light {   
+        background-color: $gray-color;
+        border: 2px solid $gray-color;
+        &:hover {
+            background-color: $white-color;
+            color: #b7b5b5;
+            border: 2px solid #e7e5e5;
+        }
+    }
+  }
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('../static/fonts/clash-display/ClashDisplay-Light.woff2') format('woff2'),
+      url('../static/fonts/clash-display/ClashDisplay-Light.woff') format('woff'),
+      url('../static/fonts/clash-display/ClashDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../static/fonts/clash-display/ClashDisplay-Regular.woff2') format('woff2'),
+      url('../static/fonts/clash-display/ClashDisplay-Regular.woff') format('woff'),
+      url('../static/fonts/clash-display/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('../static/fonts/clash-display/ClashDisplay-Medium.woff2') format('woff2'),
+      url('../static/fonts/clash-display/ClashDisplay-Medium.woff') format('woff'),
+      url('../static/fonts/clash-display/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../static/fonts/clash-display/ClashDisplay-Semibold.woff2') format('woff2'),
+      url('../static/fonts/clash-display/ClashDisplay-Semibold.woff') format('woff'),
+      url('../static/fonts/clash-display/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('../static/fonts/clash-display/ClashDisplay-Bold.woff2') format('woff2'),
+      url('../static/fonts/clash-display/ClashDisplay-Bold.woff') format('woff'),
+      url('../static/fonts/clash-display/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('../static/fonts/clash-display/ClashDisplay-Variable.woff2') format('woff2'),
+      url('../static/fonts/clash-display/ClashDisplay-Variable.woff') format('woff'),
+      url('../static/fonts/clash-display/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('../static/fonts/satoshi/Satoshi-Light.woff2') format('woff2'),
+       url('../static/fonts/satoshi/Satoshi-Light.woff') format('woff'),
+       url('../static/fonts/satoshi/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../static/fonts/satoshi/Satoshi-Regular.woff') format('woff'),
+       url('../static/fonts/satoshi/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('../static/fonts/satoshi/Satoshi-Medium.woff2') format('woff2'),
+       url('../static/fonts/satoshi/Satoshi-Medium.woff') format('woff'),
+       url('../static/fonts/satoshi/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../static/fonts/satoshi/Satoshi-Bold.woff2') format('woff2'),
+       url('../static/fonts/satoshi/Satoshi-Bold.woff') format('woff'),
+       url('../static/fonts/satoshi/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('../static/fonts/satoshi/Satoshi-Black.woff2') format('woff2'),
+       url('../static/fonts/satoshi/Satoshi-Black.woff') format('woff'),
+       url('../static/fonts/satoshi/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../static/fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
+       url('../static/fonts/satoshi/Satoshi-Variable.woff') format('woff'),
+       url('../static/fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+

@@ -1,0 +1,45 @@
+@import '../_variables.scss';
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    @media only screen and (max-width: $screen-xs-max) {
+        gap: 10px;
+        h4 {
+            font-size: 16px;
+        }
+        h5 {
+                font-size: 15px;
+            } 
+        }
+    @media only screen and (min-width: $screen-sm-min) {
+        gap: 20px;
+            h5 {
+                font-size: 18px;
+            }
+    } 
+    .product {
+        margin-bottom: 20px;
+        h5 {
+            margin: 0;
+        }
+        img {
+            @media only screen and (max-width: $screen-xs-max) {
+                width: 120px;
+                height: 170px;
+            }
+            @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                width: 163px;
+                height: 201px;
+            } 
+
+            @media only screen and (min-width: $screen-md-min){
+                width: 305px;
+                height: 375px;
+            }
+        }
+    }
+}

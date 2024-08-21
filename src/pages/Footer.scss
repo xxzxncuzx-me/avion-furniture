@@ -1,0 +1,134 @@
+@import '../_variables.scss';
+
+.footer {
+    background-color: $deep-blue-color;
+    color: $white-color;
+    @media only screen and (max-width: $screen-sm-max) {
+        padding: 40px 25px 20px 25px;
+    } 
+
+    @media only screen and (min-width: $screen-md-min) {
+        padding: 58px 82px 25px 82px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.main {
+    @media only screen and (min-width: $screen-md-min) {
+        display: flex;
+        justify-content: space-between;
+        gap: 109px;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+.main__blocks {
+    display: flex;
+    @media only screen and (max-width: $screen-xs-max) {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    } 
+    
+    @media only screen and (min-width: $screen-sm-min) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media only screen and (min-width: $screen-md-min) {
+        width: 50vw;
+    }
+    li {
+        margin-bottom: 12px;
+    }
+}
+
+.first__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        width: 50vw;
+    } 
+
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        gap: 30px;
+    }
+
+    @media only screen and (min-width: $screen-lg-min) {
+        width: 23vw;
+    }
+}
+
+.join__form {
+    @media only screen and (min-width: $screen-md-min)  {
+         width: 50vw;
+    } 
+    input {
+        background-color: $translucent-blue;
+        height: 56px;
+        @media only screen and (max-width: $screen-xs-max) {
+            width: 45vw;
+            padding-left: 20px;
+        }
+        @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            width: 250px;
+        } 
+
+         @media only screen and (min-width: $screen-sm-min)  {
+            padding-left: 32px;
+        } 
+
+        @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            width: 250px;
+        }
+
+        @media only screen and (min-width: $screen-lg-min) {
+            width: 450px;
+        }
+    }
+    ::placeholder {
+        color: $white-color;
+    }
+    button {
+        height: 56px;
+        width: 118px;
+        background-color: $white-color;
+        color: $deep-blue-color;
+    }
+}
+
+hr {
+    margin: 36px 0 24px 0;
+}
+
+.social__medias {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 14px;  
+    }
+    ul {
+        display: flex;
+        gap: 24px;
+    }
+
+    @media only screen and (max-width: $screen-sm-max) {
+        .icons {
+            display: none;
+        }
+        p {
+            margin: 0 auto;
+        }
+    } 
+
+    .icons ul li a img path:hover{
+        fill: $deep-blue-color;
+    }
+}

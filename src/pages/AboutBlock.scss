@@ -1,0 +1,47 @@
+@import '../_variables.scss';
+
+.about__brand {
+    display: flex;
+    @media only screen and (max-width: $screen-xs-max) {
+        flex-direction: column;
+    } 
+    @media only screen and (min-width: $screen-sm-min) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about {
+        @media only screen and (max-width: $screen-xs-max) {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        @media only screen and  (max-width: $screen-sm-max) {
+            p {
+                font-size: 14px;
+            }
+        } 
+
+        @media only screen and (min-width: $screen-md-min) {
+            width: 634px;
+            height: 478px;
+            padding: 64px;
+        }
+
+        &.text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .button:hover  {
+                background-color: rgba(233, 233, 233, 0.15);
+                border: 2px solid rgba(233, 233, 233, 0.3);
+                color: #b7b5b5;
+            }
+        }
+    &.img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }  
+    }
+}
